@@ -31,7 +31,7 @@ import java.util.Scanner;
 
 }
 
-
+// Main Classs
 public class TimberInventory{ 
     static Timber head = null;
      static Scanner sc = new Scanner(System.in);
