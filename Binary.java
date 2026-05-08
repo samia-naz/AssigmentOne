@@ -14,22 +14,32 @@ static void push(int x ){
     //}
 } 
 static void pop(){ 
-    for(int i = top;i>=0;i--)
+    if(top == -1)
     {
-        System.out.println(stack[top]);
+        System.out.println("Stack is empty!");
+        return;
+    } 
+    else
+    {
+        while (top>=0) {
+            System.out.print(stack[top]);
+            top--;
+        }
     }
 }
 
 public static void main(String[] args) {
    Scanner sc = new Scanner(System.in);
-    System.out.println("Enter the data: ");
+    System.out.print("Enter the data: ");
     int data = sc.nextInt();
     while(data>0){
-        push(data%2);{
+        push(data%2);
+        
         data = data/2;
+      
     } 
-        pop();
-    }
+      pop();    
+
    
 }
     
