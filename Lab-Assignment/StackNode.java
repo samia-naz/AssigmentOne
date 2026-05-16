@@ -58,7 +58,7 @@ public class StackNode {
     public static void main(String[] args) {
        while(true)
        {
-         System.out.println("Enter your number: ");
+         System.out.print("Enter your number: ");
         int data = sc.nextInt();
         if(data == -1)
         {
