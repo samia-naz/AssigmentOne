@@ -157,10 +157,44 @@ public class RedoUndo {
 
 
     public static void main(String[] args) {
-        insertText();
-        undo();
-        redo();
-        delete();
+        int choice;
+        do
+        {
+            System.out.println(" === Text Editor Menu === ");
+            System.out.println("1. Insert Text");
+            System.out.println("2. Delete Text");
+            System.out.println("3.Undo Text");
+            System.out.println("4. Redo Text");
+            System.out.println("5. Display");
+            System.out.println("6. Exit");
+            System.out.print("Enter your choice: " );
+            choice = sc.nextInt();
+            sc.nextLine();
+
+            switch (choice) {
+                case 1: 
+                insertText();
+                break;
+                case 2:
+                delete();
+                break;
+                case 3:
+                undo();
+                break;
+                case 4:
+                redo();
+                break;
+                case 5:
+                display();
+                break;
+                case 6:
+                System.out.println("Exiting the Menu");
+                break;
+                default:
+                    System.out.println("Inavlid Choice");
+                    break;
+                }
+        }while(choice!=6);
         
     }
     
