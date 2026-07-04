@@ -182,7 +182,7 @@ static void Display()
         int temp = front;
         while(true)
         {
-            System.out.println(aircraft[temp] + " ");
+            System.out.print(aircraft[temp] + " ");
              
             if(temp == rear)
             {
